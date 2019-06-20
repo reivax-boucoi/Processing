@@ -4,10 +4,11 @@ class NoiseRenderer {
     map=m;
   }
   void render() {
-    print(map.n.length);
+    background(0);
     for (int y=0; y<map.n.length; y++) {
       for (int x=0; x<map.n[0].length; x++) {
-        point(x, y, map.n[x][y]);
+        stroke(map.n[x][y]);
+        point(x, y);
       }
     }
   }

@@ -6,7 +6,7 @@ class NoiseMap {
     for (int y=0; y<h; y++) {
       for (int x=0; x<w; x++) {
        // n[x][y]=0;
-        n[x][y]=noise(x/scl, y/scl)*255;
+        n[x][y]=map(noise((float)x/scl, (float)y/scl),0,1,0,255);
       }
     }
   }
