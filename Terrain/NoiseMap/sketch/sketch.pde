@@ -1,17 +1,16 @@
 NoiseMap nm;
 NoiseRenderer nr;
 
-void setup(){
-  size(400,400);
-  nm=new NoiseMap(width,height,250,1,2,0.5);
+void setup() {
+  size(640, 480);
+  nm=new NoiseMap(width, height, 250, 1, 2, 0.5);
   nr=new NoiseRenderer(nm);
 }
 
-void draw(){
+void draw() {
   nr.render();
 }
 
-void mousePressed(){
- nr.renderMode=1-nr.renderMode; 
- print(keyCode);
+void mousePressed() {
+    nr.renderMode=1-nr.renderMode;
 }

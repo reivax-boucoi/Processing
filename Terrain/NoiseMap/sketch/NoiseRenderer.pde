@@ -8,8 +8,8 @@ class NoiseRenderer {
   }
   void render() {
     background(0);
-    for (int y=0; y<map.n.length; y++) {
-      for (int x=0; x<map.n[0].length; x++) {
+    for (int y=0; y<map.n[0].length; y++) {
+      for (int x=0; x<map.n.length; x++) {
         switch(renderMode){
          case 1:
            for(int i=0;i<terrains.terrain.length;i++){
