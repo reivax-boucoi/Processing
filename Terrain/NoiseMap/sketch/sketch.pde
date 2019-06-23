@@ -5,12 +5,13 @@ void setup() {
   size(640, 480);
   nm=new NoiseMap(width, height, 250, 1, 2, 0.5);
   nr=new NoiseRenderer(nm);
+  nr.render();
 }
 
 void draw() {
-  nr.render();
 }
 
 void mousePressed() {
     nr.renderMode=1-nr.renderMode;
+  nr.render();
 }
