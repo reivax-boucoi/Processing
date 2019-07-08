@@ -10,3 +10,8 @@ void setup(){
 void draw(){
   nr.render();
 }
+
+void mousePressed(){
+ nr.renderMode=1-nr.renderMode; 
+ print(keyCode);
+}

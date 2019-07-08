@@ -1,8 +1,13 @@
 class Terrains {
-  Terrain []t;
+  Terrain []terrain;
   Terrains() {
-    t=new Terrain[4];
-    t[0]=new Terrain(
+    terrain=new Terrain[5];
+    terrain[0]=new Terrain("sea",.2,#07528E);
+    terrain[1]=new Terrain("sand",.3,#FBD48A);
+    terrain[2]=new Terrain("earth",.6,#627E0F);
+    terrain[3]=new Terrain("hill",.8,#4F4E3C);
+    terrain[4]=new Terrain("peak",1,#FEF9F5);
+    
   }
 }
 class Terrain {
